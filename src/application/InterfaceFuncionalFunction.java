@@ -30,13 +30,15 @@ public class InterfaceFuncionalFunction {
 		List <String> name = list.stream().map(Product::nonStaticUpperCaseName).collect(Collectors.toList());
 		*/
 		
-		//  Expressão lambda  declarada
+		/*  Expressão lambda  declarada
 		 Function<Product, String> func = p -> p.getName().toUpperCase();
 		
 		
 		List <String> name = list.stream().map(func).collect(Collectors.toList());
-			
+		*/
 		
+		// Expressão lambda inLine
+		List <String> name = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
 		
 		
 		name.forEach(System.out::println);
