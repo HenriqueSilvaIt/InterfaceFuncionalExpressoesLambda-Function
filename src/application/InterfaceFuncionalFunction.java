@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import entities.Product;
-import util.UpperCaseNameInterfaceAbstrataFunction;
 
 public class InterfaceFuncionalFunction {
 
@@ -19,7 +18,11 @@ public class InterfaceFuncionalFunction {
 		list.add(new Product("Table", 350.00));
 		list.add(new Product("H", 80.90));
 
-		List <String> name = list.stream().map(new UpperCaseNameInterfaceAbstrataFunction()).collect(Collectors.toList());
+		/* Implementação da inteface
+		 * List <String> name = list.stream().map(new UpperCaseNameInterfaceAbstrataFunction()).collect(Collectors.toList()); */
+		
+		
+		List <String> name = list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
 		
 		name.forEach(System.out::println);
 	}
