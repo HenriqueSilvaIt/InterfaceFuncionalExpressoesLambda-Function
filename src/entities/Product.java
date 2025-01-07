@@ -39,9 +39,9 @@ public class Product {
 	} */ 
 	
 	
-	public String nonStaticUpperCaseName() {
+	/* Reference method com método não estáticopublic String nonStaticUpperCaseName() {
 		return name.toUpperCase();
-	}
+	}*/
 	
 	// 
 	public String toString() {
