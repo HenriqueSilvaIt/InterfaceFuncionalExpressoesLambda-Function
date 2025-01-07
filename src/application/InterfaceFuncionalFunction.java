@@ -21,8 +21,12 @@ public class InterfaceFuncionalFunction {
 		/* Implementação da inteface
 		 * List <String> name = list.stream().map(new UpperCaseNameInterfaceAbstrataFunction()).collect(Collectors.toList()); */
 		
-		
+		/* Reference method com método estático
+		 * 
 		List <String> name = list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
+		*/
+		
+		List <String> name = list.stream().map(Product::nonStaticUpperCaseName).collect(Collectors.toList());
 		
 		name.forEach(System.out::println);
 	}

@@ -33,10 +33,15 @@ public class Product {
 		price = price * 1.1;
 	}
 	
-	public static String staticUpperCaseName (Product p ) {
+	/* Reference method com método estático
+	 * public static String staticUpperCaseName (Product p ) {
 		return p.getName().toUpperCase();
-	}
+	} */ 
 	
+	
+	public String nonStaticUpperCaseName() {
+		return name.toUpperCase();
+	}
 	
 	// 
 	public String toString() {
